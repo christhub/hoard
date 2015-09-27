@@ -1,0 +1,14 @@
+{ "hoards": [{
+    "name": "Christian Obama",
+    "question": "Why is San Francisco a great place to be?",
+    "answer": "It is San Francisco, duh."
+  }, {
+    "name": "Kevin Dog",
+    "question": "Why am I not a dog?",
+    "answer": "Because you are a human."
+  }, {
+    "name": "Grace Shafari",
+    "question": "Why is everything so messy?",
+    "answer": "I can't answer that for you, please ask again."
+  }]
+}

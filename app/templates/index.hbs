@@ -1,0 +1,13 @@
+<ul>
+  {{#each model as |hoard|}}
+  <marquee class="marquee" behavior="alternate">
+    {{hoard.name}}
+    <!-- {{question-page hoard=board destroyBoard="destroyBoard"}} -->
+  </marquee>
+  {{/each}}
+
+</ul>
+
+{{new-board save2="save3"}}
+
+{{outlet}}
