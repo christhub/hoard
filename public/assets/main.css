@@ -63,6 +63,25 @@ a:hover {
   text-decoration: none;
 }
 
-.new-board {
-  margin-left: 47%;
+.fa {
+  color: #97C30A;
+}
+
+.fa:hover {
+  color: #8C8C8C;
+  text-decoration: none;
+}
+
+
+.new-hoard {
+  margin-left: 49%;
+}
+
+.plus-add-new {
+
+}
+
+.plus-add-new {
+  transform: rotate(90deg) scale(2);
+  transition: 1s ease-in-out;
 }

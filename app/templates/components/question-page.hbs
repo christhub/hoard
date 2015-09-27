@@ -1,1 +1,5 @@
+<span class="question-page">{{hoard.question}} by {{hoard.name}}
+  <a {{action 'delete' hoard}}><i class="fa fa-times"></i></a>
+  {{update-hoard hoard=hoard update="update"}}
+</span>
 {{yield}}
