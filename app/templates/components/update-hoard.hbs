@@ -17,7 +17,7 @@
         {{input value=answer id="answer" placeholder=hoard.answer}}
       </div>
 
-      <button {{action 'update' hoard}}>save</button>
+      <a {{action 'update' hoard}}><i class="fa fa-thumbs-up"></i></a>
     </form>
   {{else}}
     <a {{action 'hoardFormControlPlus'}}><i class="fa fa-plus"></i></a>

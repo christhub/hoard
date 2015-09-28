@@ -11,5 +11,4 @@ export default Ember.Component.extend({
       this.sendAction('update', hoard, params);
     }
   }
-
 });

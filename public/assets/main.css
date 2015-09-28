@@ -1,3 +1,12 @@
+form {
+ color: #555555;
+}
+
+::-webkit-input-placeholder {
+   color: #555555;
+}
+
+
 .header-board {
   /*text-align: center;*/
   font-size: 3.0em;
@@ -8,7 +17,7 @@
   font-size: 1.5em;
 }
 
-.question-page {
+.question-page, .hoarded{
   font-family: 'Raleway', sans-serif;
 }
 
@@ -52,6 +61,23 @@ img:hover {
   text-align: center;
   vertical-align: middle;
   background-color: #FF6666;
+}
+
+.hoarded-header {
+  background-color: #FF6666;
+  margin-top: -10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.hoarded-body {
+  margin-top: 10%;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
 a {
