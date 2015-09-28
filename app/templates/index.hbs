@@ -1,13 +1,15 @@
 <ul>
-  <!-- <marquee class="marquee" behavior="alternate"> -->
+
   {{#each model as |hoard|}}
+    <marquee class="marquee" behavior="alternate">
     <!-- {{hoard.name}} -->
     {{question-page hoard=hoard destroyHoard="destroyHoard" update="update"}}
     <!-- destroyBoard="destroyBoard" -->
     <!-- {{debugger}} -->
+    </marquee>
   {{/each}}
+
 {{new-hoard save2="save3"}}
-  <!-- </marquee> -->
 </ul>
 
 
