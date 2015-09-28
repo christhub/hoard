@@ -2,15 +2,17 @@ form {
  color: #555555;
 }
 
-::-webkit-input-placeholder {
+/*::-webkit-input-placeholder {
    color: #555555;
 }
-
+*/
 
 .header-board {
   /*text-align: center;*/
   font-size: 3.0em;
   font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-left: 10px;
 }
 
 .marquee {
@@ -19,6 +21,7 @@ form {
 
 .question-page, .hoarded{
   font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
 }
 
 .rotate180 {
@@ -33,25 +36,33 @@ form {
 img {
   width: 33%;
   height: auto;
-  transform: rotate(180deg);
+  /*transform: rotate(180deg);*/
 }
 
 .left-arrow {
   -webkit-filter: invert(1);
   filter: invert(1);
-  transform: scaleX(-1);
+  transform: scaleY(-1);
+  /*transform: scaleX(-1);*/
+
 }
 
 .right-arrow {
   /*transform: rotate(180deg);*/
   -webkit-filter: invert(1);
   filter: invert(1);
-  transform: scaleX(-1);
+  transform: scale(-1,-1);
 }
 
-img:hover {
+.left-arrow:hover {
   /*transform: rotate(180deg);*/
-  transform: scaleX(-1);
+  /*transform: rotate(90deg);*/
+  transform: scale(-1,-1);
+}
+
+.right-arrow:hover {
+  /*transform: rotate(-90deg);*/
+  transform: scaleY(-1);
 }
 
 .header {
@@ -68,6 +79,7 @@ img:hover {
   margin-top: -10px;
   padding-bottom: 10px;
   color: #fff;
+  width:100%;
 }
 
 .hoarded-body {
@@ -85,7 +97,7 @@ a {
 }
 
 a:hover {
-  color: #8C8C8C;
+  color: #1FBED6;
   text-decoration: none;
 }
 
@@ -94,7 +106,7 @@ a:hover {
 }
 
 .fa:hover {
-  color: #8C8C8C;
+  color: #1FBED6;
   text-decoration: none;
 }
 
