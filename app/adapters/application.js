@@ -5,6 +5,7 @@ const { inject } = Ember;
 
 export default FirebaseAdapter.extend({
   firebase: inject.service(),
+    hoardOpen: false,
   // actions: {
   //   hoardFormControlPlus () {
   //     this.set('hoardOpen', true);

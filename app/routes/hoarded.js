@@ -6,9 +6,15 @@ export default Ember.Route.extend({
     // return this.store.findAll('hoard');
     // debugger;
   },
-  // actions: {
-  //   update(hoard, params) {
-  //     this.sendAction('update', hoard, params);
-  //   }
-  // }
+  actions: {
+    saveComment(params) {
+      var newComment = this.store.createRecord('comment',params);
+      var hoard = params.hoard;
+      hoard.get('comments').addObject(newComment);
+      newComment.save().then(function() {
+        return hoard.save();
+      });
+      this.transitionTo('hoarded', params.hoard)
+    }
+  }
 });

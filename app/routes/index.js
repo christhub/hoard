@@ -2,9 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    // return hoards;
     return this.store.findAll('hoard');
-
   },
 
   actions: {
@@ -26,7 +24,6 @@ export default Ember.Route.extend({
       // debugger;
       hoard.save();
       this.transitionTo('index');
-    }
-
+    },
   }
 });
