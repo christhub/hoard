@@ -15,6 +15,9 @@ export default Ember.Route.extend({
         return hoard.save();
       });
       this.transitionTo('hoarded', params.hoard)
+    },
+    destroyComment(comment) {
+
     }
   }
 });

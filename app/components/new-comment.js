@@ -19,6 +19,7 @@ export default Ember.Component.extend({
           hoard: this.get('hoard'),
           timestamp: new Date(),
         };
+        $("#new-comment")[0].reset();
         this.set('addNewComment', false),
         this.sendAction('saveComment', params);
         // debugger;

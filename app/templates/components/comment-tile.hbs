@@ -1,8 +1,9 @@
 <div class="comment-tile">
   {{#each hoard as |comment|}}
   <div class="comment text-center">
-    <span class="h3">{{comment.title}}</span> - 
+    <span class="h3">{{comment.title}}</span> -
     <span class="h3">{{comment.text}}</span>
+    <a {{action 'destroyComment' comment}}><i class="fa fa-times"></i></a>
 
   </div>
   {{/each}}

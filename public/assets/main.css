@@ -1,5 +1,6 @@
 form {
  color: #555555;
+ font-family: 'Raleway', sans-serif;
 }
 
 /*::-webkit-input-placeholder {
@@ -42,8 +43,9 @@ img {
 .left-arrow {
   -webkit-filter: invert(1);
   filter: invert(1);
-  transform: scaleY(-1);
-  /*transform: scaleX(-1);*/
+  /*transform: scaleY(-1);*/
+  /*transform: scaleY(-1);*/
+  transform: scaleX(-1);
 
 }
 
@@ -51,21 +53,9 @@ img {
   /*transform: rotate(180deg);*/
   -webkit-filter: invert(1);
   filter: invert(1);
-  transform: scale(-1,-1);
+  /*transform: scale(-1,-1);*/
+    /*transform: scaleY(-1);*/
 }
-
-.left-arrow:hover {
-  /*transform: rotate(180deg);*/
-  /*transform: rotate(90deg);*/
-  transform: scale(-1,-1);
-}
-
-.right-arrow:hover {
-  /*transform: rotate(-90deg);*/
-  transform: scaleY(-1);
-}
-
-
 
 .header {
   width: 100%;
@@ -98,12 +88,28 @@ img {
 
 a {
   color: #fff;
+}a:hover {
+  color: #1FBED6;
+  text-decoration: none;
 }
 
 a:hover {
   color: #1FBED6;
   text-decoration: none;
 }
+
+a:hover
+
+
+.left-arrow:hover {
+  transform: scale(-1,-1);
+}
+
+.right-arrow:hover {
+  transform: scaleY(-1);
+}
+
+
 
 .fa {
   color: #97C30A;
