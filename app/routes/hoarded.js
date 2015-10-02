@@ -17,7 +17,8 @@ export default Ember.Route.extend({
       this.transitionTo('hoarded', params.hoard)
     },
     destroyComment(comment) {
-
+      comment.destroyRecord();
+      this.transitionTo('hoarded', params.hoarded_id);
     }
   }
 });
