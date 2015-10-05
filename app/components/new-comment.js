@@ -17,7 +17,7 @@ export default Ember.Component.extend({
           title: this.get('title'),
           text: this.get('text'),
           hoard: this.get('hoard'),
-          timestamp: new Date(),
+          date_added: Date.now(),
         };
         $("#new-comment")[0].reset();
         this.set('addNewComment', false),
